@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #9c9c9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.topo{
+    position: fixed;
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+    z-index: 10;
+    top: 0;
+   
+    
+}
+
+.topo h1{
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 44px;
+    
+}
+
+.topo p{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container{ 
+    width: 414px;
+    background-color: #e5e5e5;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    
+}
+
+.titulos{
+   
+    font-family: 'Righteous', cursive;
+    color: #333333;
+    font-weight: 400;
+    font-size: 26px;
+    margin-left: 19px;
+    margin-top: 10px;
+
+}
+
+.dishes{
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+.food-option{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 172px;
+    height: 216px;
+    margin-top: 17px;
+    margin-left: 19px;
+    background-color: white;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 10px;
+    
+
+}
+
+.food-option img {
+    width: 144px;
+    height: 87px;
+}
+.food-title{
+   margin-right: 22px;
+   font-weight: 700;
+   font-size: 16px;
+   color: #333333;
+   margin-top: 8px;
+   margin-bottom: 4px;
+
+}
+
+.food-option p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #a6a6a6;
+    margin-bottom: 5px;
+}
+
+.food-option h2{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+   
+}
+
+.drinks{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.desserts{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.footer{
+    width: 414px;
+    height: 92px;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;    
+}
+
+.finish-button{
+    
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-top: 15px;
+
+}
+
+.food-price{
+    justify-content: space-between;
+    display: flex;
+}
+
+.food-option .check{
+    opacity: 0;
+    color:#32B72F;
+    font-size:18px
+}
+
+.container .dishes .food-option.selecionado .check{
+    opacity: 10;
+}
+
+.container .drinks .food-option.selecionado .check{
+    opacity: 10;
+}
+
+.container .desserts .food-option.selecionado .check{
+    opacity: 10;
+}
+.selecionado{
+    border: 5px solid #32B72F;
+    
+}
+
+.botaoSelecionado{
+    background-color: #32B72F;
+}
